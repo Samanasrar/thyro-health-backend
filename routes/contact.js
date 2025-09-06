@@ -6,10 +6,9 @@ const prisma = new PrismaClient();
 
 
 router.get("/", (req, res) => {
-  res.json({ message: "Contact API is working ✅" });
+  res.json({ message: "Contact API is working " });
 });
 
-// ✅ Contact form submission
 router.post("/", async (req, res) => {
   try {
     const { name, email, message } = req.body;
